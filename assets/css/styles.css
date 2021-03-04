@@ -58,9 +58,19 @@ main {
 .previous-operation {
   color: white;
 }
-.operation {
+.current-operation {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.operation-screen {
+  color: white;
+  background: transparent;
+  font-size: 1.6rem;
+  border: none;
+  text-align: end;
+  outline: none;
+  height: 100px;
+  width: 275px;
 }
 
 .buttons-calculator {
@@ -76,6 +86,7 @@ main {
 }
 button {
   font-size: 1.2rem;
+  cursor: pointer;
 }
 button:hover {
   background: rgb(51, 55, 66);

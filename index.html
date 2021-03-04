@@ -19,31 +19,39 @@
 
   <section class="main-calculator">
     <div class="main__container">
+
       <div class="calculator-result">
-        <div class="previous-operation">5163564</div>
-        <div class="operation">145bdhb11615151213121213213</div>
+        <!-- <div id="previous" class="previous-operation"></div> -->
+        <!-- <div id="current" class="current-operation"></div> -->
+        <input type="text" id="result" class="operation-screen" placeholder="0">
       </div>
+
       <div class="buttons-calculator">
-        <button data-delete-all="" class="b">CE</button>
-        <button data-delete="" class="b">C</button>
+        <button name="data-clearAll" onclick="getElementById('result').innerHTML = clikClearAll()" class="b">CE</button>
+        <button name="data-delete" onclick="getElementById('result').innerHTML = clikDelete()" class="b">C</button>
         <button class="b">%</button>
-        <button data-operation="" class="f">÷</button>
-        <button data-number="" class="n">7</button>
-        <button data-number="" class="n">8</button>
-        <button data-number="" class="n">9</button>
-        <button data-operation="" class="f">x</button>
-        <button data-number="" class="n">4</button>
-        <button data-number="" class="n">5</button>
-        <button data-number="" class="n">6</button>
-        <button data-operation="" class="f">-</button>
-        <button data-number="" class="n">1</button>
-        <button data-number="" class="n">2</button>
-        <button data-number="" class="n">3</button>
-        <button data-operation="" class="f">+</button>
+        <button name="data-operation" onclick="getElementById('result').innerHTML = clikOperation()"
+          class="f">÷</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">7</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">8</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">9</button>
+        <button name="data-operation" onclick="getElementById('result').innerHTML = clikOperation()"
+          class="f">×</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">4</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">5</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">6</button>
+        <button name="data-operation" onclick="getElementById('result').innerHTML = clikOperation()"
+          class="f">-</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">1</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">2</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">3</button>
+        <button name="data-operation" onclick="getElementById('result').innerHTML = clikOperation()"
+          class="f">+</button>
         <button class="f">+/-</button>
-        <button data-number="" class="n">0</button>
-        <button data-number="" class="f point">.</button>
-        <button data-equal="" class="b">=</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()" class="n">0</button>
+        <button name="data-number" onclick="getElementById('result').innerHTML = clikNumbers()"
+          class="f point">.</button>
+        <button nama="data-equals" onclick="getElementById('result').innerHTML = clikEquals()" class="b">=</button>
       </div>
     </div>
   </section>
@@ -53,7 +61,7 @@
       <div class="designe-rights">
         <p>All rights reserved. Calculator</p>
         <p>
-          Designed with 🧡<\3 <a href="https://twitter.com/DianaCa80600701" target="_blank">@DianaCa80600701</a>
+          Designed with 🧡 <a href="https://twitter.com/DianaCa80600701" target="_blank">@DianaCa80600701</a>
         </p>
       </div>
       <div class="linkSocial">
@@ -71,6 +79,7 @@
         </a>
       </div>
   </footer>
+
 </body>
 
 </html>
